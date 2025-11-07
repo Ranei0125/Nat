@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+<style type="text/css">
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    background-color: rgba(255,255,255,1.00);
+}
+body {
+    margin: 0;
+    background-color: beige;
+}
+footer {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: x-small;
+    margin-top: 70px;
+    text-align: center;
+}
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 650px;
+    margin-top: 10px;
+}
+nav {
+    background-color: rgba(232,53,56,1.00);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+li {
+    display: inline-block;
+    font-family: "Lexend Giga", sans-serif;
+    margin-left: 200px;
+}
+	li:hover {color: rgba(255,229,108,1.00);}
+h2 {
+    margin-left: 710px;
+    font-family: "Lexend Giga", sans-serif;
+    margin-top: 70px;
+}
+.star {
+    margin-left: 700px;
+}
+p {
+    font-family: "Lexend Giga", sans-serif;
+    margin-left: 700px;
+}
+.about {
+    font-weight: bolder;
+    font-size: x-large;
+}
+.details {
+    margin-top: 100px;
+}
+h3 {
+    font-family: "Lexend Giga", sans-serif;
+    margin-left: 700px;
+    text-decoration: underline;
+}
+.statement {
+    color: rgba(244,58,58,1.00);
+    font-style: normal;
+}
+.colors {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.sizes {
+    text-decoration: underline;
+}
+.lilac {
+    width: 60px;
+    height: 60px;
+    margin-left: 700px;
+    background-color: rgba(225,205,239,1.00);
+    border-radius: 30px;
+}
+.mint {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: rgba(184,228,200,1.00);
+}
+.sky {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: rgba(193,227,226,1.00);
+}
+.addtocart {
+    width: 150px;
+    height: 90px;
+    margin-left: 700px;
+    margin-top: 40px;
+}
+button:hover {
+    border: thick solid red;
+}
+div {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    visibility: hidden;
+}
+.apparel {
+    position: relative;
+    margin-top: 20px;
+}
+button {
+    border: thick solid white;
+}
+.apparel img {
+    position: absolute;
+}
+</style>
+</head>
+
+<body onLoad="MM_preloadImages('back(green).png','back (purple).png','back(light blue).png')"><wrapper>
+  <header><img src="levis%20logo.png" alt="" width="650" height="318" class="logo"></header>
+  <nav>
+    <ul>
+      <li>Women</li>
+		<li>Men</li>
+		<li>Kids</li>
+		<li>Sale</li>
+    </ul>
+  </nav>
+  <main>
+    <section class="apparel"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('LilacTee1','','back (purple).png',1)"><img src="front (purple).png" alt="LilacTee" width="600" height="800" id="LilacTee1" style="visibility:visible;"></a>
+	  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('MintTee','','back(green).png',1)"><img src="front(green).png" alt="MintTee" width="600" height="800" id="MintTee"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('SkyTee','','back(light blue).png',1)"><img src="front(lightblue).png" alt="SkyTee" width="600" height="800" id="SkyTee"></a>
+	  </section>
+    <section>
+      <h2>Men's Basic Tee 
+	  </h2>
+    <img src="5star.jpg" alt="" width="276" height="86" class="star">
+    <h2>$13.99</h2>
+    <p class="about">ABOUT THE STYLE</p>
+    <p>Classics like our Men's Basic Tee never go out of style. We made this one with an ultra-flattering crew neckline and a fitted cut—all topped off with our signature red tab.</p>
+    <h3>Sizes:</h3>
+    <p class="sizes">| XS | S | M | L | XL |</p>
+    <p class="statement">Customers say true to size!</p>
+    <p class="colors">Colors:</p>
+    <button class="lilac" onClick="MM_showHideLayers('LilacTee1','','show','LilacTee','','hide','MintTee','','hide','SkyTee','','hide')"></button>
+    <button class="mint" onClick="MM_showHideLayers('LilacTee1','','hide','MintTee','','show','SkyTee','','hide')"></button>
+    <button class="sky" onClick="MM_showHideLayers('LilacTee1','','hide','MintTee','','hide','SkyTee','','show')"></button>
+    <img src="add%20to%20cart.png" alt="" width="1616" height="980" class="addtocart">    </section>
+  </main>
+  <footer>© 2025, Nathaly Gonzalez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
